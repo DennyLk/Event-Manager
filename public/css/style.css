@@ -1,0 +1,354 @@
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; 
+}
+
+form {
+    padding: 2%;
+    border: 3px solid #e0eafc;
+    width: 30%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4682B4; 
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336; 
+    color: white;
+    border-radius: 5px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E90FF;
+    padding: 15px 0 30px 0; 
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+nav h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #f0f8ff; 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E90FF;
+    color: white;
+}
+
+td {
+    background-color: white; 
+}
+
+
+td form {
+    display: inline-block;
+    margin: 0;
+    width: 100%; 
+}
+
+button {
+    background-color: #1E90FF; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #4682B4; 
+}
+
+
+button.register, button.unregister {
+    width: auto; 
+    min-width: 150px; 
+    padding: 10px 20px;
+}
+
+button.unregister {
+    background-color: #f44336; 
+}
+
+button.register:hover, button.unregister:hover {
+    opacity: 0.9;
+}
+
+
+.admin-section {
+    margin-bottom: 20px;
+}
+
+.admin-section h4 {
+    margin-top: 10px;
+}
+
+.admin-section a {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.admin-section a:hover {
+    background-color: #4682B4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f0f8ff;
+}
+
+.admin-actions a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.admin-actions a:hover {
+    background-color: #0056b3;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.admin-dashboard {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 50px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: auto; 
+    max-height: 80vh; 
+}
+
+.admin-dashboard h2, 
+.admin-dashboard p {
+    text-align: center;
+}
+.admin-dashboard h3 {
+    padding-top: 150px;
+    text-align: center;
+
+
+}
+.styled-table input[readonly],
+.styled-table select[disabled] {
+    pointer-events: none;
+    background-color: #f9f9f9; 
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    text-align: center;
+    width: 300px; 
+}
+
+.event-card h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+.event-card .details {
+    display: none;
+    margin-top: 10px;
+}
+
+.event-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+.event-card button:hover {
+    background-color: #0056b3;
+}
+@media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
